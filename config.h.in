@@ -1,0 +1,33 @@
+/* endianess 
+ * 0 : big endian
+ * 1 : little endian
+ * see <gmlite/common.h> and gmlite/CMakeLists.txt
+ */
+#cmakedefine ENDIANESS @ORDER@
+
+/* bits */
+#cmakedefine SIXTY_FOUR_BIT_LONG
+#cmakedefine SIXTY_FOUR_BIT
+#cmakedefine THIRTY_TWO_BIT
+
+/* thread */
+#cmakedefine HAVE_PTHREAD
+#cmakedefine HAVE_WIN32_THREAD
+#cmakedefine HAVE_NO_THREAD
+
+/* header file */
+#cmakedefine HAVE_IMMINTRIN_H
+#cmakedefine HAVE_ALLOCA_H
+#cmakedefine HAVE_SYS_MMAN_H
+
+/* function */
+#cmakedefine HAVE_MMAP
+#cmakedefine HAVE_MPROTECT
+#cmakedefine HAVE_MLOCK
+#cmakedefine HAVE_EXPLICIT_BZERO
+#cmakedefine HAVE_EXPLICIT_MEMSET
+#cmakedefine HAVE_POSIX_MEMALIGN
+#cmakedefine HAVE_GETPID
+#cmakedefine HAVE_GETGID
+#cmakedefine HAVE_GETUID
+#cmakedefine HAVE_GETTIMEOFDAY
